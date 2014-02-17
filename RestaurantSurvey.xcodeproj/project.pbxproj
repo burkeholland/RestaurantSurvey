@@ -10,6 +10,7 @@
 		E910C25018AD3A58005AC6CA /* XYZLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E910C24F18AD3A58005AC6CA /* XYZLocation.m */; };
 		E910C25218AE7FBE005AC6CA /* EverliveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E910C25118AE7FBE005AC6CA /* EverliveSDK.framework */; };
 		E910C25518AE80C6005AC6CA /* Ratings.m in Sources */ = {isa = PBXBuildFile; fileRef = E910C25418AE80C6005AC6CA /* Ratings.m */; };
+		E9AB36B718AE99FC0063DF6C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AB36B618AE99FC0063DF6C /* MapKit.framework */; };
 		E9D50B0118A9776800463BF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D50B0018A9776800463BF9 /* Foundation.framework */; };
 		E9D50B0318A9776800463BF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D50B0218A9776800463BF9 /* CoreGraphics.framework */; };
 		E9D50B0518A9776800463BF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D50B0418A9776800463BF9 /* UIKit.framework */; };
@@ -247,6 +248,7 @@
 		E910C25118AE7FBE005AC6CA /* EverliveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EverliveSDK.framework; path = ../../../Downloads/EverliveSDK.framework; sourceTree = "<group>"; };
 		E910C25318AE80C6005AC6CA /* Ratings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ratings.h; sourceTree = "<group>"; };
 		E910C25418AE80C6005AC6CA /* Ratings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ratings.m; sourceTree = "<group>"; };
+		E9AB36B618AE99FC0063DF6C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E9D50AFD18A9776800463BF9 /* RestaurantSurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantSurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D50B0018A9776800463BF9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E9D50B0218A9776800463BF9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -479,6 +481,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9AB36B718AE99FC0063DF6C /* MapKit.framework in Frameworks */,
 				E910C25218AE7FBE005AC6CA /* EverliveSDK.framework in Frameworks */,
 				E9D5101A18AC0DA100463BF9 /* TelerikUI.framework in Frameworks */,
 				E9D50B0318A9776800463BF9 /* CoreGraphics.framework in Frameworks */,
@@ -532,6 +535,7 @@
 		E9D50AFF18A9776800463BF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9AB36B618AE99FC0063DF6C /* MapKit.framework */,
 				E910C25118AE7FBE005AC6CA /* EverliveSDK.framework */,
 				E9D5101918AC0DA100463BF9 /* TelerikUI.framework */,
 				E9D50B0018A9776800463BF9 /* Foundation.framework */,
@@ -1250,6 +1254,7 @@
 				INFOPLIST_FILE = "RestaurantSurvey/RestaurantSurvey-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = NO;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1278,6 +1283,7 @@
 				INFOPLIST_FILE = "RestaurantSurvey/RestaurantSurvey-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = NO;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;

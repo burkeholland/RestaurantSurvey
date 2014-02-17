@@ -15,7 +15,6 @@
 @interface XYZSurveyViewController ()
 
 @property (weak, nonatomic) IBOutlet UISlider *ratingSlider;
-- (IBAction)ratingTouchUpOutside:(id)sender;
 @property (weak, nonatomic) IBOutlet UITableViewCell *locationCell;
 @property XYZSelectLocationViewController *selectLocation;
 @property (weak, nonatomic) IBOutlet UILabel *detailLabel;
@@ -158,6 +157,12 @@
     
     [dataStore create:rating block:^(BOOL success, NSError *error) {
         
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Survey Complete!"
+                                                        message:@"Thank you.  Your feedback has been recorded."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
     }];
 }
 
